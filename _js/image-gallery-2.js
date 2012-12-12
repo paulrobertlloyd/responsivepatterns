@@ -7,12 +7,14 @@ if (document.querySelector) {
         var prev = document.createElement('a');
         prev.rel = 'prev';
         prev.href = '#';
-        prev.innerHTML = 'Previous Image';
+        prev.innerHTML = '&#9664;';
+        prev.title = 'Previous Image';
         carousel.appendChild(prev);
         var next = document.createElement('a');
         next.rel = 'next';
         next.href = '#';
-        next.innerHTML = 'Next Image';
+        next.innerHTML = '&#9654;';
+        next.title = 'Next Image';
         carousel.appendChild(next);
         
         addEvent(prev, 'click', function(e) {

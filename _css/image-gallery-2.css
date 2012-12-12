@@ -1,6 +1,3 @@
-/* ============================================================
-    Default Appearance
-============================================================ */
 figure {
     margin:0 4% 4% 0;
     float:left;
@@ -34,33 +31,68 @@ figure:nth-of-type(2n+1) {
 }
 
 /* ============================================================
-    JS Appearance
+    Carosuel
 ============================================================ */
-.has-js figcaption {
+.carousel.is-enhanced {
+    position:relative;
+    overflow:hidden;
+}
+.carousel.is-enhanced img {
+    width:100%;
+}
+
+.carousel.is-enhanced figure {
+    width:100%;
     display:none;
-}
-.has-js figure.active {
-    width:100%;
-}
-.has-js figure.active img {
-    width:100%;
-}
-.has-js figure.active figcaption {
+    }
+    .carousel.is-enhanced figure.active {
+        display:block;
+    }
+
+.carousel.is-enhanced figcaption {
     display:block;
     margin:0;
     width:100%;
     position:absolute;
     bottom:0;
     background-color:rgba(0,0,0,0.66);
-}
-.has-js figure.active figcaption p {
+    }
+    .carousel.is-enhanced figcaption p {
+        color:#fff;
+        margin:0;
+        padding:2%;
+    }
+
+.carousel.is-enhanced a {
     color:#fff;
-    margin:0;
-    padding:3%;
-}
-.carousel.is-enhanced figure {
-    display: none;
-}
-.carousel.is-enhanced figure.active {
-    display: block;
-}
+    border-bottom-color:rgba(255,255,255,0.25);
+    }
+    .carousel.is-enhanced a:hover,
+    .carousel.is-enhanced a:active {
+        border-bottom-color:rgba(255,255,255,0.5);
+    }
+
+.carousel.is-enhanced a[rel="prev"],
+.carousel.is-enhanced a[rel="next"] {
+    background-color:rgba(0,0,0,0.66);
+    border:0 none;
+    padding:1em;
+    position:absolute;
+    display:none;
+    top:50%;
+    margin-top:-2.5em;
+    }
+    .carousel.is-enhanced a[rel="prev"]:hover,
+    .carousel.is-enhanced a[rel="next"]:hover {
+        background-color:rgba(0,0,0,0.9);
+    }
+    .carousel.is-enhanced a[rel="prev"] {
+        left:0;
+    }
+    .carousel.is-enhanced a[rel="next"] {
+        right:0;
+    }
+    .carousel.is-enhanced:hover a[rel="prev"],
+    .carousel.is-enhanced:hover a[rel="next"] {
+        display:block;
+    }
