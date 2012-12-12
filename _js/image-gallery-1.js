@@ -24,6 +24,11 @@ if (document.querySelector) {
             featuredImg.src = el.querySelector('img').src;
             fullImg.src = el.href;
             featuredCaption.innerHTML = el.parentNode.querySelector('figcaption').innerHTML;
+            var active = gallery.querySelector('.active');
+            if (active) {
+                active.className = active.className.replace(' active', '');
+            }
+            el.className += ' active';
         }
         updateSlide(links[0]);
         
