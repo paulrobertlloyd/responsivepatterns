@@ -16,7 +16,12 @@ if (document.querySelector) {
         
         function updateSlide(el) {
             console.log(el.parentNode);
-            fullImg.src = el.href;
+            var loadImg = new Image();
+            addEvent(loadImg, 'load', function(e) {
+                fullImg.src = loadImg.src;
+            });
+            fullImg.src = el.querySelector('img').src;
+            loadImg.src = el.href;
             fullCaption.innerHTML = el.parentNode.querySelector('figcaption').innerHTML;
         }
         updateSlide(links[0]);
