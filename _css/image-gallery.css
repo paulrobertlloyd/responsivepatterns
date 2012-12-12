@@ -1,0 +1,51 @@
+/* ============================================================
+    Non-JS Appearance
+============================================================ */
+figure {
+    margin:0 4% 4% 0;
+    float:left;
+    width:48%;
+    position:relative;
+}
+figure:nth-of-type(2n) {
+    margin-right:0;
+}
+@media screen and (min-width:36em) {
+    figure {
+        margin:0 2% 4% 0;
+        float:left;
+        width:31%;
+    }
+    figure:nth-of-type(2n) {
+        margin-right:2%;
+    }
+    figure:nth-of-type(3n) {
+        margin-right:0;
+    }
+}
+
+/* ============================================================
+    Non-JS Appearance
+============================================================ */
+.has-js figcaption {
+    display:none;
+}
+.has-js figure.active {
+    width:100%;
+}
+.has-js figure.active img {
+    width:100%;
+}
+.has-js figure.active figcaption {
+    display:block;
+    margin:0;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background-color:rgba(0,0,0,0.66);
+}
+.has-js figure.active figcaption p {
+    color:#fff;
+    margin:0;
+    padding:3%;
+}
