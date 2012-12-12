@@ -9,20 +9,21 @@ if (document.querySelector) {
             updateSlide(this);
             e.preventDefault();
         });
-        var fullFig = document.createElement('figure'),
-            fullImg = fullFig.appendChild(document.createElement('img')),
-            fullCaption = fullFig.appendChild(document.createElement('figcaption'));
-        gallery.parentNode.insertBefore(fullFig, gallery);
+        var featured = document.createElement('figure');
+        featured.className = 'featured'
+        var featuredImg = featured.appendChild(document.createElement('img')),
+            featuredCaption = featured.appendChild(document.createElement('figcaption'));
+            
+        gallery.parentNode.insertBefore(featured, gallery);
         
         function updateSlide(el) {
-            console.log(el.parentNode);
-            var loadImg = new Image();
-            addEvent(loadImg, 'load', function(e) {
-                fullImg.src = loadImg.src;
+            var fullImg = new Image();
+            addEvent(fullImg, 'load', function(e) {
+                featuredImg.src = fullImg.src;
             });
-            fullImg.src = el.querySelector('img').src;
-            loadImg.src = el.href;
-            fullCaption.innerHTML = el.parentNode.querySelector('figcaption').innerHTML;
+            featuredImg.src = el.querySelector('img').src;
+            fullImg.src = el.href;
+            featuredCaption.innerHTML = el.parentNode.querySelector('figcaption').innerHTML;
         }
         updateSlide(links[0]);
         
