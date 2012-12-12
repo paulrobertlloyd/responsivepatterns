@@ -15,19 +15,21 @@ if (document.querySelector) {
         next.innerHTML = 'Next Image';
         carousel.appendChild(next);
         
-        addEvent(prev, 'click', function() {
+        addEvent(prev, 'click', function(e) {
             var newSlide = slide - 1;
             if (newSlide < 0) {
                 newSlide = figures.length-1;
             }
             revealSlide(newSlide);
+            e.preventDefault();
         });
-        addEvent(next, 'click', function() {
+        addEvent(next, 'click', function(e) {
             var newSlide = slide + 1;
             if (newSlide > figures.length-1) {
                 newSlide = 0;
             }
             revealSlide(newSlide);
+            e.preventDefault();            
         });
         
         function revealSlide(newSlide) {
