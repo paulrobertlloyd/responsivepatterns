@@ -31,27 +31,39 @@ figure:nth-of-type(2n+1) {
 }
 
 /* ============================================================
-    JS Appearance
+    Gallery
 ============================================================ */
-.has-js figcaption {
-    display:none;
-}
-.has-js figure.active {
+figure.featured {
     width:100%;
 }
-.has-js figure.active img {
-    width:100%;
-}
-.has-js figure.active figcaption {
+figure.featured figcaption {
     display:block;
     margin:0;
     width:100%;
     position:absolute;
     bottom:0;
     background-color:rgba(0,0,0,0.66);
+    }
+    figure.featured figcaption p {
+        color:#fff;
+        margin:0;
+        padding:2%;
+    }
+
+.gallery.is-enhanced {
+    clear:left;
 }
-.has-js figure.active figcaption p {
-    color:#fff;
-    margin:0;
-    padding:3%;
+.gallery.is-enhanced figure {
+    margin-right:1%;
+    width:15.6667%;
+    clear:none;
+    }
+    .gallery.is-enhanced figure:last-child {
+        margin-right:0
+    }
+.gallery.is-enhanced figcaption {
+    display:none;
+}
+.gallery.is-enhanced a.gallery-link img {
+    outline:2px solid red;
 }
