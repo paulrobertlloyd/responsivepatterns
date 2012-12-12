@@ -35,6 +35,10 @@ figure:nth-of-type(2n+1) {
 ============================================================ */
 figure.featured {
     width:100%;
+    margin-bottom:1%;
+}
+figure.featured img {
+    width:100%;
 }
 figure.featured figcaption {
     display:block;
@@ -49,12 +53,20 @@ figure.featured figcaption {
         margin:0;
         padding:2%;
     }
+    figure.featured a {
+        color:#fff;
+        border-bottom-color:rgba(255,255,255,0.25);
+        }
+        figure.featured a:hover,
+        figure.featured a:active {
+            border-bottom-color:rgba(255,255,255,0.5);
+        }
 
 .gallery.is-enhanced {
     clear:left;
 }
 .gallery.is-enhanced figure {
-    margin-right:1%;
+    margin-right:1.2%;
     width:15.6667%;
     clear:none;
     }
@@ -64,6 +76,6 @@ figure.featured figcaption {
 .gallery.is-enhanced figcaption {
     display:none;
 }
-.gallery.is-enhanced a.gallery-link img {
-    outline:2px solid red;
+.gallery.is-enhanced a.active img {
+    outline:2px solid #c30;
 }
