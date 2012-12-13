@@ -31,16 +31,25 @@ figure:nth-of-type(2n+1) {
 }
 
 /* ============================================================
-    Gallery
+    Carosuel
 ============================================================ */
-figure.featured {
-    width:100%;
-    margin-bottom:1%;
+.gallery.is-enhanced {
+    position:relative;
+    overflow:hidden;
 }
-figure.featured img {
+.gallery.is-enhanced img {
     width:100%;
 }
-figure.featured figcaption {
+
+.gallery.is-enhanced figure {
+    width:100%;
+    display:none;
+    }
+    .gallery.is-enhanced figure.active {
+        display:block;
+    }
+
+.gallery.is-enhanced figcaption {
     display:block;
     margin:0;
     width:100%;
@@ -48,34 +57,42 @@ figure.featured figcaption {
     bottom:0;
     background-color:rgba(0,0,0,0.66);
     }
-    figure.featured figcaption p {
+    .gallery.is-enhanced figcaption p {
         color:#fff;
         margin:0;
         padding:2%;
     }
-    figure.featured a {
-        color:#fff;
-        border-bottom-color:rgba(255,255,255,0.25);
-        }
-        figure.featured a:hover,
-        figure.featured a:active {
-            border-bottom-color:rgba(255,255,255,0.5);
-        }
 
-.gallery.is-enhanced {
-    clear:left;
-}
-.gallery.is-enhanced figure {
-    margin-right:1.2%;
-    width:15.6667%;
-    clear:none;
+.gallery.is-enhanced a {
+    color:#fff;
+    border-bottom-color:rgba(255,255,255,0.25);
     }
-    .gallery.is-enhanced figure:last-child {
-        margin-right:0
+    .gallery.is-enhanced a:hover,
+    .gallery.is-enhanced a:active {
+        border-bottom-color:rgba(255,255,255,0.5);
     }
-.gallery.is-enhanced figcaption {
+
+.gallery.is-enhanced a[rel="prev"],
+.gallery.is-enhanced a[rel="next"] {
+    background-color:rgba(0,0,0,0.66);
+    border:0 none;
+    padding:1em;
+    position:absolute;
     display:none;
-}
-.gallery.is-enhanced a.active img {
-    outline:2px solid #c30;
-}
+    top:50%;
+    margin-top:-2.5em;
+    }
+    .gallery.is-enhanced a[rel="prev"]:hover,
+    .gallery.is-enhanced a[rel="next"]:hover {
+        background-color:rgba(0,0,0,0.9);
+    }
+    .gallery.is-enhanced a[rel="prev"] {
+        left:0;
+    }
+    .gallery.is-enhanced a[rel="next"] {
+        right:0;
+    }
+    .gallery.is-enhanced:hover a[rel="prev"],
+    .gallery.is-enhanced:hover a[rel="next"] {
+        display:block;
+    }

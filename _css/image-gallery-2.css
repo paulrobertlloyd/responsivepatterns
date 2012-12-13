@@ -31,25 +31,16 @@ figure:nth-of-type(2n+1) {
 }
 
 /* ============================================================
-    Carosuel
+    Gallery
 ============================================================ */
-.carousel.is-enhanced {
-    position:relative;
-    overflow:hidden;
+figure.featured {
+    width:100%;
+    margin-bottom:1%;
 }
-.carousel.is-enhanced img {
+figure.featured img {
     width:100%;
 }
-
-.carousel.is-enhanced figure {
-    width:100%;
-    display:none;
-    }
-    .carousel.is-enhanced figure.active {
-        display:block;
-    }
-
-.carousel.is-enhanced figcaption {
+figure.featured figcaption {
     display:block;
     margin:0;
     width:100%;
@@ -57,42 +48,34 @@ figure:nth-of-type(2n+1) {
     bottom:0;
     background-color:rgba(0,0,0,0.66);
     }
-    .carousel.is-enhanced figcaption p {
+    figure.featured figcaption p {
         color:#fff;
         margin:0;
         padding:2%;
     }
+    figure.featured a {
+        color:#fff;
+        border-bottom-color:rgba(255,255,255,0.25);
+        }
+        figure.featured a:hover,
+        figure.featured a:active {
+            border-bottom-color:rgba(255,255,255,0.5);
+        }
 
-.carousel.is-enhanced a {
-    color:#fff;
-    border-bottom-color:rgba(255,255,255,0.25);
+.gallery.is-enhanced {
+    clear:left;
+}
+.gallery.is-enhanced figure {
+    margin-right:1.2%;
+    width:15.6667%;
+    clear:none;
     }
-    .carousel.is-enhanced a:hover,
-    .carousel.is-enhanced a:active {
-        border-bottom-color:rgba(255,255,255,0.5);
+    .gallery.is-enhanced figure:last-child {
+        margin-right:0
     }
-
-.carousel.is-enhanced a[rel="prev"],
-.carousel.is-enhanced a[rel="next"] {
-    background-color:rgba(0,0,0,0.66);
-    border:0 none;
-    padding:1em;
-    position:absolute;
+.gallery.is-enhanced figcaption {
     display:none;
-    top:50%;
-    margin-top:-2.5em;
-    }
-    .carousel.is-enhanced a[rel="prev"]:hover,
-    .carousel.is-enhanced a[rel="next"]:hover {
-        background-color:rgba(0,0,0,0.9);
-    }
-    .carousel.is-enhanced a[rel="prev"] {
-        left:0;
-    }
-    .carousel.is-enhanced a[rel="next"] {
-        right:0;
-    }
-    .carousel.is-enhanced:hover a[rel="prev"],
-    .carousel.is-enhanced:hover a[rel="next"] {
-        display:block;
-    }
+}
+.gallery.is-enhanced a.active img {
+    outline:2px solid #c30;
+}
