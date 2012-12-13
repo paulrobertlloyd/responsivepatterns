@@ -26,6 +26,7 @@ function loadImgs() {
 if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
     loadImgs();
 }
+
 /*
 eg:
 if (navigator.connection && navigator.connection.bandwidth >= 750) {
