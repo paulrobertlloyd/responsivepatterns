@@ -1,13 +1,12 @@
 <!DOCTYPE html><html lang="en-gb">
-
 <head>
-    <title>Big Picture</title>
     <meta charset="utf-8"/>
     <script>
         document.getElementsByTagName('html')[0].className = 'has-js';
     </script>
     <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="_css/big-picture.css" type="text/css"/>
+    <title>Big Picture</title>
 </head>
 
 <body>
@@ -55,7 +54,7 @@
             <figure>
                 <a data-img href="_assets/big-picture/5.jpg" title="View a larger version of this photo (167kb)"><img src="_assets/big-picture/5-thumb.jpg" width="360" alt=""/></a>
                 <figcaption>
-                    <h3>Eexpedition Amundsen</h3>
+                    <h3>Expedition Amundsen</h3>
                     <p><em>Viewer&#8217;s Choice/People:</em> A race that follows in the path of the famous explorer Roald Amundsen brings the contestants to the Hardangervidda Mountainplateu, Norway. 100km across the plateau, the exact same route Amundsen used to prepare for his South Pole expedition in 1911 is still used by explorers today. Amundsen did not manage to cross the plateau and had to turn back because of bad weather. He allegedly said that the attempt to cross Hardangervidda was just as dangerous and hard as the conquering of the South Pole. <small>(Photo and caption by Kai-Otto Melau/National Geographic Photo Contest)</small></p>
                 </figcaption>
             </figure>
@@ -143,5 +142,12 @@
         </li>
     </ol>
 </body>
+
 <script src="_js/data-img.js"></script>
+<script>
+    // Load image enhancements only if the viewport is wider than 640px
+    if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
+        loadImgs();
+    }
+</script>
 </html>

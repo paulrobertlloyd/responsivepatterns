@@ -1,10 +1,12 @@
 <!DOCTYPE html><html lang="en-gb">
-
 <head>
-    <title>News Article Listing</title>
     <meta charset="utf-8"/>
+    <script>
+        document.getElementsByTagName('html')[0].className = 'has-js';
+    </script>
     <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="_css/article-listing.css" type="text/css"/>
+    <title>News Article Listing</title>
 </head>
 
 <body>
@@ -40,5 +42,17 @@
         <p class="standfirst">President Obama says the US formally recognises Syria's opposition coalition as the sole "legitimate representative" of the Syrian people.</p>
     </article>
 </body>
+
 <script src="_js/data-img.js"></script>
+<script>
+    // Load image enhancements only if the viewport is wider than 640px
+    if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
+        loadImgs();
+    }
+
+    // Alternatively, we could choose to only load image enhancements above certain bandwidth criteria
+    // if (navigator.connection && navigator.connection.bandwidth >= 750) {
+    //     loadImgs();
+    // }
+</script>
 </html>
