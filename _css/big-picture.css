@@ -2,33 +2,33 @@
     Figure
 ============================================================ */
 .photos {
-    list-style:none;
+    list-style: none;
     counter-reset: picture;
-    margin:2em 0;
+    margin: 2em 0;
 }
 .photos li {
-    margin-left:0;
-}
-.photos li:before {
-    content: counter(picture);
-    counter-increment: picture;
-    color:#999;
-    font-size:1.3125em; /* 21px */
-    line-height:1.1429; /* 24px */
-    width:1.7143em; /* 36px */
-    float:left;
-    display:block;
-}
+    margin-left: 0;
+    }
+    .photos li:before {
+        content: counter(picture);
+        counter-increment: picture;
+        color: #999;
+        font-size: 1.3125em; /* 21px */
+        line-height: 1.1429; /* 24px */
+        width: 1.7143em; /* 36px */
+        float: left;
+        display: block;
+    }
 .photos figure {
     overflow: hidden;
 }
 .photos figure img {
-    display:block;
+    display: block;
 }
-.photos figcaption {
-
+.photos figcaption h3 {
+    font-size:1.3334em;
+    margin-top: 0.5em;
 }
-
 .photos figcaption small {
     color:rgba(0,0,0,0.5);
     font-size:0.75em;
@@ -38,30 +38,31 @@
 }
 @media screen and (min-width:36em) {
     .photos li {
-        margin-left:-2.25em;
+        margin-left: -2.25em;
     }
     .has-js .photos figure {
-        background-color:#222;
+        background-color: #222;
     }
     .has-js .photos figure img {
-        width:100%;
+        width: 100%;
     }
     .has-js .photos figcaption {
-        display:block;
-        margin:0;
-        width:100%;
+        display: block;
+        margin: 0;
+        padding: 3%;
+        width: 94%;
     }
     .has-js .photos figcaption h3 {
-        color:#fff;
-        margin:0 0 0 0;
-        padding:2% 2% 0;
+        color: #fff;
+        margin-top: 0;
     }
     .has-js .photos figcaption p {
-        color:#fff;
-        margin:0;
-        padding:0.5em 2% 1em;
+        color: #fff;
+    }
+    .has-js .photos figcaption p:last-child {
+        margin-bottom: 0;
     }
     .has-js .photos figcaption small {
-        color:rgba(255,255,255,0.5);
+        color: rgba(255,255,255,0.5);
     }
 }

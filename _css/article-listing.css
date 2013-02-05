@@ -1,46 +1,17 @@
-/* ============================================================
-    Article Excerpt
-============================================================ */
-article {
-    border-bottom:1px dotted #ccc;
-    padding-bottom:1em;
-    overflow:hidden;
-}
-article h1 {
-    font-size:1.25em;
-    line-height:1.2;
-    margin-bottom:0;
-}
-article time {
-    color:#666;
-    font-size:0.875em;
-    line-height:1.1429;
-}
-article img {
-    margin:0 1em 0 0;
+.articles img {
+    margin: 0 2% 0 0;
+    width: 31%;
     float:left;
-    width:33%;
 }
-article p {
-    line-height:1.25em;
-}
-article.headline img {
-    margin:0 0 1em 0;
-    float:none;
-    width:100%;
-}
-@media screen and (min-width:36em) {
-    article p {
-        line-height:1.5em;
-    }
+.articles .headline img {
+    margin: 0 0 1em 0;
+    float: none;
+    width: 100%;
 }
 @media screen and (min-width:50em) {
-    article.headline h1 {
-        margin-top:0;
-    }
-    article.headline img {
-        margin:0 1em 1em 0;
-        float:left;
-        width:50%;
+    .articles .headline img {
+        margin: 0 1em 0 0;
+        float: left;
+        width: 50%;
     }
 }

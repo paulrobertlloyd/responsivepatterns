@@ -1,46 +1,67 @@
 <!DOCTYPE html><html lang="en-gb">
 <head>
+    <title>News Article Listing</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>
         document.getElementsByTagName('html')[0].className = 'has-js';
     </script>
     <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
     <link rel="stylesheet" href="_css/article-listing.css" type="text/css"/>
-    <title>News Article Listing</title>
 </head>
 
 <body>
-    <h1>Top Stories</h1>
-    <article class="headline">
-        <img src="_assets/article-listing/1-thumb.jpg" width="360" alt=""/>
-        <h1><a href="#">Defiant North Korea in rocket success</a></h1>
-        <p><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
-        <p class="standfirst">North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
-    </article>
-    <article>
-        <h1><a href="#">Big decline in UK unemployment</a></h1>
-        <p><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
-        <div data-img="_assets/article-listing/2-thumb.jpg"></div>
-        <p class="standfirst">The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
-    </article>
-    <article>
-        <h1><a href="#">Sitar maestro Ravi Shankar dies</a></h1>
-        <p><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
-        <div data-img="_assets/article-listing/3-thumb.jpg"></div>
-        <p class="standfirst">Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
-    </article>
-    <article>
-        <h1><a href="#">PFA plans roadshow to wipe out football&#8217;s racism blight</a></h1>
-        <p><time pubdate datetime="2012-12-12T16:10-00:00">12 December 2012</time></p>
-        <div data-img="_assets/article-listing/4-thumb.jpg"></div>
-        <p class="standfirst">Players and coaches in England will be given &#8220;cultural awareness lessons&#8221; next year to try to rid football of the racist incidents.</p>
-    </article>
-    <article>
-        <h1><a href="#">Obama recognises Syria opposition</a></h1>
-        <p><time pubdate datetime="2012-12-12T15:10-00:00">12 December 2012</time></p>
-        <div data-img="_assets/article-listing/5-thumb.jpg"></div>
-        <p class="standfirst">President Obama says the US formally recognises Syria's opposition coalition as the sole "legitimate representative" of the Syrian people.</p>
-    </article>
+    <header>
+        <nav role="navigation" class="breadcrumb-nav">
+            <a href="/">Responsive Patterns</a> /
+        </nav><!--/.breadcrumb-nav-->
+        <h1>Article Listing</h1>
+    </header>
+
+    <h2>Top stories</h2>
+    <ol class="articles">
+        <li><a href="#">
+            <article class="headline module">
+                <img src="_assets/article-listing/1-thumb.jpg" width="360" alt=""/>
+                <h1 class="h">Defiant North Korea in rocket success</h1>
+                <p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+                <p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+            </article>
+        </a></li>
+        <li><a href="#">
+            <article class="module">
+                <div data-img="_assets/article-listing/2-thumb.jpg"></div>
+                <h1 class="h">Big decline in UK unemployment</h1>
+                <p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+                <p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+            </article>
+        </a></li>
+        <li><a href="#">
+            <article class="module">
+                <div data-img="_assets/article-listing/3-thumb.jpg"></div>
+                <h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+                <p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+                <p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+            </article>
+        </a></li>
+        <li><a href="#">
+            <article class="module">
+                <div data-img="_assets/article-listing/4-thumb.jpg"></div>
+                <h1 class="h">PFA plans roadshow to wipe out football&#8217;s racism blight</h1>
+                <p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+                <p>Players and coaches in England will be given &#8220;cultural awareness lessons&#8221; next year to try to rid football of the racist incidents.</p>
+            </article>
+        </a></li>
+        <li><a href="#">
+            <article class="module">
+                <div data-img="_assets/article-listing/5-thumb.jpg"></div>
+                <h1 class="h">Obama recognises Syria opposition</h1>
+                <p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+                <p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+            </article>
+        </a></li>
+    </ol><!--/.articles-->
 </body>
 
 <script src="_js/data-img.js"></script>

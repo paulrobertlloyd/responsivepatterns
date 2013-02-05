@@ -1,0 +1,104 @@
+figure {
+    margin: 0 4% 4% 0;
+    width: 48%;
+    float: left;
+    position: relative;
+    }
+    figure:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    figure:nth-of-type(2n+1) {
+        clear: left;
+    }
+figcaption {
+    margin: 0;
+    border: 0;
+}
+@media screen and (min-width:36em) {
+    figure {
+        margin: 0 2% 4% 0;
+        width: 31%;
+        float: left;
+        }
+        figure:nth-of-type(2n) {
+            margin-right: 2%;
+        }
+        figure:nth-of-type(2n+1) {
+            clear: none;
+        }
+        figure:nth-of-type(3n) {
+            margin-right: 0;
+        }
+        figure:nth-of-type(3n+1) {
+            clear: left;
+        }
+}
+
+
+/* ============================================================
+    Carosuel
+============================================================ */
+.gallery.is-enhanced {
+    position: relative;
+    overflow: hidden;
+}
+.gallery.is-enhanced img {
+    width: 100%;
+}
+
+.gallery.is-enhanced figure {
+    width: 100%;
+    display: none;
+    }
+    .gallery.is-enhanced figure.active {
+        display: block;
+    }
+
+.gallery.is-enhanced figcaption {
+    background-color: rgba(0,0,0,0.66);
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    }
+    .gallery.is-enhanced figcaption p {
+        color: #fff;
+        padding: 0 2%;
+    }
+    .gallery.is-enhanced figcaption p:last-child {
+        margin-bottom: 0;
+    }
+
+.gallery.is-enhanced a {
+    color: #fff;
+    border-bottom-color: rgba(255,255,255,0.25);
+    }
+    .gallery.is-enhanced a:hover,
+    .gallery.is-enhanced a:active {
+        border-bottom-color: rgba(255,255,255,0.5);
+    }
+
+.gallery.is-enhanced a[rel="prev"],
+.gallery.is-enhanced a[rel="next"] {
+    background-color: rgba(0,0,0,0.66);
+    border: 0;
+    padding: 1em;
+    position: absolute;
+    display: none;
+    top: 50%;
+    margin-top: -2.5em;
+    }
+    .gallery.is-enhanced a[rel="prev"]:hover,
+    .gallery.is-enhanced a[rel="next"]:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .gallery.is-enhanced a[rel="prev"] {
+        left: 0;
+    }
+    .gallery.is-enhanced a[rel="next"] {
+        right: 0;
+    }
+    .gallery.is-enhanced:hover a[rel="prev"],
+    .gallery.is-enhanced:hover a[rel="next"] {
+        display: block;
+    }

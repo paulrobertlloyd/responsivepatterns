@@ -1,16 +1,24 @@
 <!DOCTYPE html><html lang="en-gb">
 <head>
+    <title>Image Gallery (Carousel)</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>
         document.getElementsByTagName('html')[0].className = 'has-js';
     </script>
     <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="_css/image-gallery-2.css" type="text/css"/>
-    <title>Image Gallery 2</title>
+    <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
+    <link rel="stylesheet" href="_css/image-gallery-carousel.css" type="text/css"/>
 </head>
 
 <body>
-    <h1>Image Gallery 2</h1>
+    <header>
+        <nav role="navigation" class="breadcrumb-nav">
+            <a href="/">Responsive Patterns</a> /
+        </nav><!--/.breadcrumb-nav-->
+        <h1>Image Gallery (Carousel)</h1>
+    </header>
+
     <div class="gallery">
         <figure>
             <a href="_assets/image-gallery/1-hi.jpg" title="View a larger version of this photo (116kb)" class="gallery-link"><img src="_assets/image-gallery/1.jpg" width="360" alt=""/></a>
@@ -51,5 +59,5 @@
     </div>
 </body>
 
-<script src="_js/image-gallery-2.js"></script>
+<script src="_js/image-gallery-carousel.js"></script>
 </html>

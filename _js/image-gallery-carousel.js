@@ -31,6 +31,5 @@ if (document.querySelector) {
             el.className += ' active';
         }
         updateSlide(links[0]);
-        
     }
 }

@@ -1,16 +1,24 @@
 <!DOCTYPE html><html lang="en-gb">
 <head>
+    <title>Image Gallery (Slideshow)</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>
         document.getElementsByTagName('html')[0].className = 'has-js';
     </script>
     <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="_css/image-gallery-1.css" type="text/css"/>
-    <title>Image Gallery 1</title>
+    <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
+    <link rel="stylesheet" href="_css/image-gallery-slideshow.css" type="text/css"/>
 </head>
 
 <body>
-    <h1>Image Gallery 1</h1>
+    <header>
+        <nav role="navigation" class="breadcrumb-nav">
+            <a href="/">Responsive Patterns</a> /
+        </nav><!--/.breadcrumb-nav-->
+        <h1>Image Gallery (Slideshow)</h1>
+    </header>
+
     <div class="gallery">
         <figure>
             <a href="_assets/image-gallery/1-hi.jpg" data-img title="View a larger version of this photo (116kb)"><img src="_assets/image-gallery/1.jpg" width="360" alt=""/></a>
@@ -52,5 +60,16 @@
 </body>
 
 <script src="_js/data-img.js"></script>
-<script src="_js/image-gallery-1.js"></script>
+<script>
+    // Load image enhancements only if the viewport is wider than 640px
+    if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
+        loadImgs();
+    }
+
+    // Alternatively, we could choose to only load image enhancements above certain bandwidth criteria
+    // if (navigator.connection && navigator.connection.bandwidth >= 750) {
+    //     loadImgs();
+    // }
+</script>
+<script src="_js/image-gallery-slideshow.js"></script>
 </html>
