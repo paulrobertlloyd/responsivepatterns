@@ -5,7 +5,8 @@ function loadImgs() {
         var dataImgs = document.querySelectorAll('[data-img]');
         for (var i=0,len=dataImgs.length;i<len;++i) {
             (function(dataImg) {
-                var dataImgParent = dataImg.parentNode,
+                var dataImgClassName = dataImg.className,
+					dataImgParent = dataImg.parentNode,
                     fullSrc = dataImg.getAttribute('data-img');
                 if (fullSrc == "") {
                     fullSrc = dataImg.getAttribute('href');
@@ -17,6 +18,7 @@ function loadImgs() {
                         dataImgParent.removeChild(dataImg);
                     });
                     fullImg.src = fullSrc;
+					fullImg.className = dataImgClassName;
                 }
             })(dataImgs[i]);
         }
