@@ -1,75 +1,75 @@
 <!DOCTYPE html><html lang="en-gb">
 <head>
-    <title>Image Gallery (Slideshow)</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script>
-        document.getElementsByTagName('html')[0].className = 'has-js';
-    </script>
-    <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
-    <link rel="stylesheet" href="_css/image-gallery-slideshow.css" type="text/css"/>
+	<title>Image Gallery (Slideshow)</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script>
+		document.getElementsByTagName('html')[0].className = 'has-js';
+	</script>
+	<link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
+	<link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
+	<link rel="stylesheet" href="_css/image-gallery-slideshow.css" type="text/css"/>
 </head>
 
 <body>
-    <header>
-        <nav role="navigation" class="breadcrumb-nav">
-            <a href="../">Responsive Patterns</a> /
-        </nav><!--/.breadcrumb-nav-->
-        <h1>Image Gallery (Slideshow)</h1>
-    </header>
+	<header>
+		<nav role="navigation" class="breadcrumb-nav">
+			<a href="../">Responsive Patterns</a> /
+		</nav><!--/.breadcrumb-nav-->
+		<h1>Image Gallery (Slideshow)</h1>
+	</header>
 
-    <div class="gallery">
-        <figure>
-            <a href="_assets/image-gallery/1-hi.jpg" data-imgsrc title="View a larger version of this photo (116kb)"><img src="_assets/image-gallery/1.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>The Causeway Coast. <a href="#">Learn more about the Causeway Coast</a>.</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="_assets/image-gallery/2-hi.jpg" data-imgsrc title="View a larger version of this photo (44kb)"><img src="_assets/image-gallery/2.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>The Causeway Hotel.</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="_assets/image-gallery/3-hi.jpg" data-imgsrc title="View a larger version of this photo (108kb)"><img src="_assets/image-gallery/3.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>Tourists besiege the causeway.</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="_assets/image-gallery/4-hi.jpg" data-imgsrc title="View a larger version of this photo (151kb)"><img src="_assets/image-gallery/4.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>The Giant&#8217;s Causeway viewed from above.</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="_assets/image-gallery/5-hi.jpg" data-imgsrc title="View a larger version of this photo (167kb)"><img src="_assets/image-gallery/5.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>Large basalt columns.</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <a href="_assets/image-gallery/6-hi.jpg" data-imgsrc title="View a larger version of this photo (91kb)"><img src="_assets/image-gallery/6.jpg" width="360" alt=""/></a>
-            <figcaption>
-                <p>Ballintoy Harbour.</p>
-            </figcaption>
-        </figure>
-    </div>
+	<div class="gallery">
+		<figure>
+			<a href="_assets/image-gallery/1-hi.jpg" data-imgsrc title="View a larger version of this photo (116kb)"><img src="_assets/image-gallery/1.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>The Causeway Coast. <a href="#">Learn more about the Causeway Coast</a>.</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="_assets/image-gallery/2-hi.jpg" data-imgsrc title="View a larger version of this photo (44kb)"><img src="_assets/image-gallery/2.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>The Causeway Hotel.</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="_assets/image-gallery/3-hi.jpg" data-imgsrc title="View a larger version of this photo (108kb)"><img src="_assets/image-gallery/3.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>Tourists besiege the causeway.</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="_assets/image-gallery/4-hi.jpg" data-imgsrc title="View a larger version of this photo (151kb)"><img src="_assets/image-gallery/4.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>The Giant&#8217;s Causeway viewed from above.</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="_assets/image-gallery/5-hi.jpg" data-imgsrc title="View a larger version of this photo (167kb)"><img src="_assets/image-gallery/5.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>Large basalt columns.</p>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="_assets/image-gallery/6-hi.jpg" data-imgsrc title="View a larger version of this photo (91kb)"><img src="_assets/image-gallery/6.jpg" width="360" alt=""/></a>
+			<figcaption>
+				<p>Ballintoy Harbour.</p>
+			</figcaption>
+		</figure>
+	</div>
 </body>
 
 <script src="//raw.github.com/paulrobertlloyd/data-imgsrc/master/data-imgsrc.js"></script>
 <script>
-    // Load image enhancements only if the viewport is wider than 640px
-    if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
-        loadImgs();
-    }
+	// Load image enhancements only if the viewport is wider than 640px
+	if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
+		loadImgs();
+	}
 
-    // Alternatively, we could choose to only load image enhancements above certain bandwidth criteria
-    // if (navigator.connection && navigator.connection.bandwidth >= 750) {
-    //     loadImgs();
-    // }
+	// Alternatively, we could choose to only load image enhancements above certain bandwidth criteria
+	// if (navigator.connection && navigator.connection.bandwidth >= 750) {
+	//	 loadImgs();
+	// }
 </script>
 <script src="_js/image-gallery-slideshow.js"></script>
 </html>

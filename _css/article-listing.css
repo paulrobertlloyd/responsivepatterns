@@ -1,17 +1,17 @@
 .articles img {
-    margin: 0 2% 0 0;
-    width: 31%;
-    float:left;
+	margin: 0 2% 0 0;
+	width: 31%;
+	float:left;
 }
 .articles .headline img {
-    margin: 0 0 1em 0;
-    float: none;
-    width: 100%;
+	margin: 0 0 1em 0;
+	float: none;
+	width: 100%;
 }
 @media screen and (min-width:50em) {
-    .articles .headline img {
-        margin: 0 1em 0 0;
-        float: left;
-        width: 50%;
-    }
+	.articles .headline img {
+		margin: 0 1em 0 0;
+		float: left;
+		width: 50%;
+	}
 }

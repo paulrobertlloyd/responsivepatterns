@@ -1,87 +1,87 @@
 figure {
-    margin: 0 4% 4% 0;
-    float: left;
-    width: 48%;
-    position: relative;
-    }
-    figure:nth-of-type(2n) {
-        margin-right: 0;
-    }
-    figure:nth-of-type(2n+1) {
-        clear: left;
-    }
+	margin: 0 4% 4% 0;
+	float: left;
+	width: 48%;
+	position: relative;
+	}
+	figure:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	figure:nth-of-type(2n+1) {
+		clear: left;
+	}
 figcaption {
-    margin: 0;
-    border: 0;
+	margin: 0;
+	border: 0;
 }
 @media screen and (min-width:36em) {
-    figure {
-        margin: 0 2% 4% 0;
-        float: left;
-        width: 31%;
-        }
-        figure:nth-of-type(2n) {
-            margin-right: 2%;
-        }
-        figure:nth-of-type(2n+1) {
-            clear: none;
-        }
-        figure:nth-of-type(3n) {
-            margin-right: 0;
-        }
-        figure:nth-of-type(3n+1) {
-            clear: left;
-        }
+	figure {
+		margin: 0 2% 4% 0;
+		float: left;
+		width: 31%;
+		}
+		figure:nth-of-type(2n) {
+			margin-right: 2%;
+		}
+		figure:nth-of-type(2n+1) {
+			clear: none;
+		}
+		figure:nth-of-type(3n) {
+			margin-right: 0;
+		}
+		figure:nth-of-type(3n+1) {
+			clear: left;
+		}
 }
 
 
 /* ============================================================
-    Gallery
+	Gallery
 ============================================================ */
 figure.featured {
-    margin-bottom: 1%;
-    width: 100%;
+	margin-bottom: 1%;
+	width: 100%;
 }
 figure.featured img {
-    width: 100%;
+	width: 100%;
 }
 figure.featured figcaption {
-    background-color: rgba(0,0,0,0.66);
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    }
-    figure.featured figcaption p {
-        color: #fff;
-        padding: 0 2%;
-    }
-    figure.featured figcaption p:last-child {
-        margin-bottom: 0;
-    }
-    figure.featured a {
-        color: #fff;
-        border-bottom-color: rgba(255,255,255,0.25);
-        }
-        figure.featured a:hover,
-        figure.featured a:active {
-            border-bottom-color: rgba(255,255,255,0.5);
-        }
+	background-color: rgba(0,0,0,0.66);
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	}
+	figure.featured figcaption p {
+		color: #fff;
+		padding: 0 2%;
+	}
+	figure.featured figcaption p:last-child {
+		margin-bottom: 0;
+	}
+	figure.featured a {
+		color: #fff;
+		border-bottom-color: rgba(255,255,255,0.25);
+		}
+		figure.featured a:hover,
+		figure.featured a:active {
+			border-bottom-color: rgba(255,255,255,0.5);
+		}
 
 .gallery.is-enhanced {
-    clear: left;
+	clear: left;
 }
 .gallery.is-enhanced figure {
-    margin-right: 1.2%;
-    width: 15.6667%;
-    clear: none;
-    }
-    .gallery.is-enhanced figure:last-child {
-        margin-right: 0
-    }
+	margin-right: 1.2%;
+	width: 15.6667%;
+	clear: none;
+	}
+	.gallery.is-enhanced figure:last-child {
+		margin-right: 0
+	}
 .gallery.is-enhanced figcaption {
-    display: none;
+	display: none;
 }
 .gallery.is-enhanced a.active img {
-    outline: 2px solid #c30;
+	outline: 2px solid #c30;
 }
