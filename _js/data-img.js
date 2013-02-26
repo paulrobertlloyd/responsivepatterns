@@ -6,7 +6,7 @@ function loadImgs() {
         for (var i=0,len=dataImgs.length;i<len;++i) {
             (function(dataImg) {
                 var dataImgClassName = dataImg.className,
-					dataImgParent = dataImg.parentNode,
+                    dataImgParent = dataImg.parentNode,
                     fullSrc = dataImg.getAttribute('data-img');
                 if (fullSrc == "") {
                     fullSrc = dataImg.getAttribute('href');
@@ -18,7 +18,7 @@ function loadImgs() {
                         dataImgParent.removeChild(dataImg);
                     });
                     fullImg.src = fullSrc;
-					fullImg.className = dataImgClassName;
+                    fullImg.className = dataImgClassName;
                 }
             })(dataImgs[i]);
         }
