@@ -1,40 +1,45 @@
 <!DOCTYPE html><html lang="en-gb">
 <head>
-	<title>Responsive Image Markup Patterns</title>
+	<title>Responsive Markup Patterns</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/reset.css" type="text/css"/>
-	<link rel="stylesheet" href="//barebones.paulrobertlloyd.com/_css/patterns.css" type="text/css"/>
+	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
 </head>
 
 <body>
-	<header>
-		<h1>Responsive Image Markup Patterns</h1>
-		<p class="lede">Documenting useful ways to include images in a responsive context.</p>
-	</header>
+	<header role="banner">
+		<div class="container">
+			<h1 class="headline">Responsive Image Markup Patterns</h1>
+			<p class="lede">Documenting useful ways to include images in a responsive context.</p>
+		</div><!--/container-->
+	</header><!--/@banner-->
 
-	<h2>Examples</h2>
-	<p>Please study the markup in these examples, and be sure to view with JavaScript disabled, too.</p>
+	<main role="main">
+		<div class="container">
+			<p>Please study the markup in these examples, and be sure to view with JavaScript disabled, too.</p>
 
-	<h3><a href="article-listing.html">Article Listing</a></h3>
-	<p>An image to illustrate the headline story is considered valuable content. Images for subsequent stories are considered an enhancement, but references to thumbnail images are provided so that these can be shown in certain states.</p>
-	<p>In this example, thumbnail images for subsequent stories are not shown when a user views the component on a display that is narrower than 640px.</p>
+			<h3><a href="article-listing.html">Article Listing</a></h3>
+			<p>An image to illustrate the headline story is considered valuable content. Images for subsequent stories are considered an enhancement, but references to thumbnail images are provided so that these can be shown in certain states.</p>
+			<p>In this example, thumbnail images for subsequent stories are not shown when a user views the component on a display that is narrower than 640px.</p>
 
-	<h3><a href="image-gallery-slideshow.html">Image Gallery (Slideshow)</a></h3>
-	<p>As a gallery of images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (1440&#215;960 pixels) is linked to from a small thumbnail (360&#215;240 pixels).</p>
-	<p>In this example, when we enhance the design with JavaScript, we use the thumbnails as image placeholders, that appear before the large resolution images have been fully downloaded.</p>
+			<h3><a href="image-gallery-slideshow.html">Image Gallery (Slideshow)</a></h3>
+			<p>As a gallery of images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (1440&#215;960 pixels) is linked to from a small thumbnail (360&#215;240 pixels).</p>
+			<p>In this example, when we enhance the design with JavaScript, we use the thumbnails as image placeholders, that appear before the large resolution images have been fully downloaded.</p>
 
-	<h3><a href="image-gallery-carousel.html">Image Gallery (Carousel)</a></h3>
-	<p>As a gallery of images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (1440&#215;960 pixels) is linked to from a small thumbnail (360&#215;240 pixels).</p>
-	<p>In this example, when we enhance the design with JavaScript, we retain the thumbnail images and include them in the carousel interface. We also use them as placeholder images, appearing before the large resolution images have been fully downloaded.</p>
+			<h3><a href="image-gallery-carousel.html">Image Gallery (Carousel)</a></h3>
+			<p>As a gallery of images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (1440&#215;960 pixels) is linked to from a small thumbnail (360&#215;240 pixels).</p>
+			<p>In this example, when we enhance the design with JavaScript, we retain the thumbnail images and include them in the carousel interface. We also use them as placeholder images, appearing before the large resolution images have been fully downloaded.</p>
 
-	<h3><a href="big-picture.html">Big Picture</a></h3>
-	<p>As a page of large immersive images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (990 pixels wide) is linked to from a small thumbnail (360 pixels wide).</p>
-	<p>In this example, when we enhance the design with JavaScript, we use the thumbnails as image placeholders, that appear before the large resolution images have been fully downloaded.</p>
+			<h3><a href="big-picture.html">Big Picture</a></h3>
+			<p>As a page of large immersive images, it&#8217;s essential these can be seen by any user viewing this component. A high resolution version of each image (990 pixels wide) is linked to from a small thumbnail (360 pixels wide).</p>
+		<p>In this example, when we enhance the design with JavaScript, we use the thumbnails as image placeholders, that appear before the large resolution images have been fully downloaded.</p>
+		</div><!--/.container-->
+	</main><!--/@main-->
 
 	<footer role="contentinfo">
-		
-		<p><small>Lovingly crafted by <a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a> and <a href="http://joshemerson.co.uk/">Josh Emerson</a>. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
-	</footer><!--/.contentinfo-->
+		<div class="container">
+			<p><small>Lovingly crafted by <a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a> and <a href="http://joshemerson.co.uk/">Josh Emerson</a>. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+		</div><!--/.container-->
+	</footer><!--/@contentinfo-->
 </body>
 </html>
